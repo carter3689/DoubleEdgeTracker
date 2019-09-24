@@ -7,16 +7,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Angular Material Imports
 import { SharedModule } from './shared/shared.module';
+import { HomePageComponent } from './home-page/home-page.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]

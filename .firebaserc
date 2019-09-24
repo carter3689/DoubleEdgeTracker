@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "doubleedgetracker": {
+      "hosting": {
+        "DoubleEdgeTracker": [
+          "doubleedgetracker"
+        ]
+      }
+    }
+  }
+}

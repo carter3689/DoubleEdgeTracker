@@ -14,6 +14,9 @@ const routes: Routes = [
    loadChildren: () => 
     import('./kanban/kanban.module').then(m => m.KanbanModule),
     canActivate:[AuthGuard]
+ },
+ {
+   path: 'payment', loadChildren: () => import('./payment/payment.module').then(m => m.PaymentModule)
  }
 ];
 
